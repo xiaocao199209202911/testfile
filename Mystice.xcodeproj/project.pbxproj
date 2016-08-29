@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE7C7D5B3ED26ECA1FF2E9B5 /* libPods-Mystice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D907A26475C195E7CA789290 /* libPods-Mystice.a */; };
 		FDFD5ECD1D741C800069C8DA /* Mystice.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FDFD5ECC1D741C800069C8DA /* Mystice.h */; };
 		FDFD5ECF1D741C800069C8DA /* Mystice.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFD5ECE1D741C800069C8DA /* Mystice.m */; };
 /* End PBXBuildFile section */
@@ -25,6 +26,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		12AA779D79F83E03C06B5B0D /* Pods-Mystice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mystice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mystice/Pods-Mystice.debug.xcconfig"; sourceTree = "<group>"; };
+		B02C2626AFF63B773B82D0C0 /* Pods-Mystice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mystice.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mystice/Pods-Mystice.release.xcconfig"; sourceTree = "<group>"; };
+		D907A26475C195E7CA789290 /* libPods-Mystice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Mystice.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDFD5EC91D741C800069C8DA /* libMystice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMystice.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		FDFD5ECC1D741C800069C8DA /* Mystice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mystice.h; sourceTree = "<group>"; };
 		FDFD5ECE1D741C800069C8DA /* Mystice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mystice.m; sourceTree = "<group>"; };
@@ -35,17 +39,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE7C7D5B3ED26ECA1FF2E9B5 /* libPods-Mystice.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ABCC2EA800C2D30FFA153798 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				12AA779D79F83E03C06B5B0D /* Pods-Mystice.debug.xcconfig */,
+				B02C2626AFF63B773B82D0C0 /* Pods-Mystice.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		F9455A3CC8A4BDB7500CB526 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D907A26475C195E7CA789290 /* libPods-Mystice.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FDFD5EC01D741C800069C8DA = {
 			isa = PBXGroup;
 			children = (
 				FDFD5ECB1D741C800069C8DA /* Mystice */,
 				FDFD5ECA1D741C800069C8DA /* Products */,
+				ABCC2EA800C2D30FFA153798 /* Pods */,
+				F9455A3CC8A4BDB7500CB526 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,9 +97,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FDFD5ED21D741C800069C8DA /* Build configuration list for PBXNativeTarget "Mystice" */;
 			buildPhases = (
+				63C8084971DE70812FCC9FFF /* [CP] Check Pods Manifest.lock */,
 				FDFD5EC51D741C800069C8DA /* Sources */,
 				FDFD5EC61D741C800069C8DA /* Frameworks */,
 				FDFD5EC71D741C800069C8DA /* CopyFiles */,
+				FB6B30FE944175291EBA0F4F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -117,6 +143,39 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		63C8084971DE70812FCC9FFF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		FB6B30FE944175291EBA0F4F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Mystice/Pods-Mystice-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FDFD5EC51D741C800069C8DA /* Sources */ = {
@@ -214,6 +273,7 @@
 		};
 		FDFD5ED31D741C800069C8DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 12AA779D79F83E03C06B5B0D /* Pods-Mystice.debug.xcconfig */;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -223,6 +283,7 @@
 		};
 		FDFD5ED41D741C800069C8DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B02C2626AFF63B773B82D0C0 /* Pods-Mystice.release.xcconfig */;
 			buildSettings = {
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -249,6 +310,7 @@
 				FDFD5ED41D741C800069C8DA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
