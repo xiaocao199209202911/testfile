@@ -1,0 +1,256 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FDFD5ECD1D741C800069C8DA /* Mystice.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = FDFD5ECC1D741C800069C8DA /* Mystice.h */; };
+		FDFD5ECF1D741C800069C8DA /* Mystice.m in Sources */ = {isa = PBXBuildFile; fileRef = FDFD5ECE1D741C800069C8DA /* Mystice.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		FDFD5EC71D741C800069C8DA /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				FDFD5ECD1D741C800069C8DA /* Mystice.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		FDFD5EC91D741C800069C8DA /* libMystice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMystice.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDFD5ECC1D741C800069C8DA /* Mystice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mystice.h; sourceTree = "<group>"; };
+		FDFD5ECE1D741C800069C8DA /* Mystice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mystice.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDFD5EC61D741C800069C8DA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FDFD5EC01D741C800069C8DA = {
+			isa = PBXGroup;
+			children = (
+				FDFD5ECB1D741C800069C8DA /* Mystice */,
+				FDFD5ECA1D741C800069C8DA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FDFD5ECA1D741C800069C8DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FDFD5EC91D741C800069C8DA /* libMystice.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FDFD5ECB1D741C800069C8DA /* Mystice */ = {
+			isa = PBXGroup;
+			children = (
+				FDFD5ECC1D741C800069C8DA /* Mystice.h */,
+				FDFD5ECE1D741C800069C8DA /* Mystice.m */,
+			);
+			path = Mystice;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FDFD5EC81D741C800069C8DA /* Mystice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FDFD5ED21D741C800069C8DA /* Build configuration list for PBXNativeTarget "Mystice" */;
+			buildPhases = (
+				FDFD5EC51D741C800069C8DA /* Sources */,
+				FDFD5EC61D741C800069C8DA /* Frameworks */,
+				FDFD5EC71D741C800069C8DA /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Mystice;
+			productName = Mystice;
+			productReference = FDFD5EC91D741C800069C8DA /* libMystice.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FDFD5EC11D741C800069C8DA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = xiangcang;
+				TargetAttributes = {
+					FDFD5EC81D741C800069C8DA = {
+						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = 6NAQTCGSSK;
+					};
+				};
+			};
+			buildConfigurationList = FDFD5EC41D741C800069C8DA /* Build configuration list for PBXProject "Mystice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = FDFD5EC01D741C800069C8DA;
+			productRefGroup = FDFD5ECA1D741C800069C8DA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FDFD5EC81D741C800069C8DA /* Mystice */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FDFD5EC51D741C800069C8DA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FDFD5ECF1D741C800069C8DA /* Mystice.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		FDFD5ED01D741C800069C8DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		FDFD5ED11D741C800069C8DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FDFD5ED31D741C800069C8DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		FDFD5ED41D741C800069C8DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FDFD5EC41D741C800069C8DA /* Build configuration list for PBXProject "Mystice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDFD5ED01D741C800069C8DA /* Debug */,
+				FDFD5ED11D741C800069C8DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FDFD5ED21D741C800069C8DA /* Build configuration list for PBXNativeTarget "Mystice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FDFD5ED31D741C800069C8DA /* Debug */,
+				FDFD5ED41D741C800069C8DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = FDFD5EC11D741C800069C8DA /* Project object */;
+}
