@@ -10,4 +10,5 @@
 
 @interface Mystice : NSObject
 
+- (void)test;
 @end

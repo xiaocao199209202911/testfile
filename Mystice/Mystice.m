@@ -9,5 +9,8 @@
 #import "Mystice.h"
 
 @implementation Mystice
-
+-(void)test
+{
+    NSLog(@"1111");
+}
 @end
